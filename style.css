@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato',sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.image {
+    height: 100%;
+    background:url(image/twimage.png) center center/cover;
+    flex: 0 1 53vw;
+}
+
+.content {
+    flex: 1;
+    justify-content: space-evenly;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.whitebird {
+    width: 20rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    fill: white;
+}
+
+.bluebird {
+    width: 3rem;
+    fill: rgb(113, 113, 241);
+}
+
+h1,h3 {
+    color: black;
+    font-weight: 800;
+}
+h1{
+    font-size: 5vw;
+}
+h3{
+    font-size: 2.3rem;
+}
+
+.btn_signup_google {
+    padding: 13px 100px;
+    height: 1.3rem;
+    border: 0;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    font-family: 'Google Sans',arial,sans-serif;;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    font-size: medium;
+}
+.btn_signup_apple {
+    padding: 13px 100px;
+    height: 1.3rem;
+    border: 0;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    font-family: 'Google Sans',arial,sans-serif;;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    font-size: medium;
+}
+.btn_signup_apple:hover {
+    background:rgb(196, 192, 192);
+  }
+h5{
+    text-align: center;
+}
+
+.btn_signup {
+    padding: 10px 80px;
+    height: 1.3rem;
+    border: 0;
+    background-color: rgba(0, 119, 255, 0.959);
+    border-radius: 30px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    font-family: 'Google Sans',arial,sans-serif;;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    font-size: medium;
+}
+.btn_signup:hover {
+    background: #40b0f5;
+  }
+.btn_signin {
+    padding: 13px 100px;
+    height: 1.3rem;
+    border: 0;
+    background-color:whitesmoke;
+    border-radius: 50px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+    font-family: 'Google Sans',arial,sans-serif;;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    font-size: medium;
+}
+.btn_signin:hover {
+    background:rgb(196, 192, 192);
+  }
+  h6{
+    color: rgb(83, 100, 113);
+    line-height: 12px;
+    font-size: 11px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    width: 400px;
+    margin-bottom: 20px;
+
+  }
+  .footer{
+      padding: 2rem;
+  }
+  .footer nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  .footer nav a,.footer nav div {
+      text-decoration: none;
+      font-size: 13px;
+      color: #3e464d;
+      margin: .3rem .5rem;
+      border-bottom: 1px solid transparent;
+      transition: all .1s ease;
+  }
+  .footer nav a:hover {
+      border-bottom: 1px solid #536471;
+    }
+
+    .terms:hover {
+        border-bottom: 1px solid blue;
+
+    }
+    @media(max-width: 1000px) {
+        .content {
+          order: -1;
+          max-width: 600px;
+          height: 90vh;
+          margin: 0 auto;
+        }
+        .btn_signin {
+            margin-bottom: 20px;
+        }
+        .image {
+            height: 50vh;
+            flex:  0 1 100vw;
+        }
+        .whitebird {
+            flex-shrink: inherit;
+        }
